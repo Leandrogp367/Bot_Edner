@@ -1,21 +1,27 @@
 import telegram
 from telegram.ext import Updater, CommandHandler
 
-
 updater = Updater(token='660107528:AAEinY_FmaWcsobeo60JYkJNYDFFzgfzyzQ')
 dispatcher = updater.dispatcher
 
 def start(bot, update):
-  update.message.reply_text("Olá")
+  update.message.reply_text("yo nigger")
+
+def reply1(bot, update):
+  update.message.reply_text(int(input('inform your income: ')))
 
 def main():
     updater = Updater('660107528:AAEinY_FmaWcsobeo60JYkJNYDFFzgfzyzQ')
     dispatcher = updater.dispatcher
     print("Bot started")
     start_handler = CommandHandler('start', start)
+    dispatcher.add_handler(CommandHandler('financies', reply1))
     dispatcher.add_handler(start_handler)
     updater.start_polling()
     updater.idle()
 
+
+  
 if __name__ == '__main__':
     main()
+
