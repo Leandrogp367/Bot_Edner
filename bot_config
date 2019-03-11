@@ -8,7 +8,7 @@ def start(bot, update):
   update.message.reply_text("yo nigger")
 
 def reply1(bot, update):
-  update.message.reply_text(int(input('inform your income: ')))
+  update.message.reply_input('inform your income: ')
 
 def main():
     updater = Updater('660107528:AAEinY_FmaWcsobeo60JYkJNYDFFzgfzyzQ')
