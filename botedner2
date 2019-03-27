@@ -1,0 +1,26 @@
+import telepot
+import json
+from telepot.namedtuple import ForceReply, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+
+load = open()
+token = json.loads(load.read())
+bot = telepot.Bot(token["660107528:AAEinY_FmaWcsobeo60JYkJNYDFFzgfzyzQ"])
+
+
+def condicoes(chatID, msg):
+    if(msg == "/start"):
+        inicio(chatID, bot)
+
+    elif(msg == "Financias"):
+        bot.sendMessage(chatID, "Primeiramente terei de pedir algumas inforções relacionadas ao seu mês")
+        bot.sendMessage(chatID, "Qual seria seu sálario?")
+    elif(msg == True):
+        int(msg)
+        msg == salario
+        bot.sendMessage(chatID, "Agora suas despesas")
+    elif(msg == True):
+        saldo = salario - msg
+        bot.sendMessage(chatID, "seu saldo é de: " saldo, reply_markup=InlineKeyboardMarkup(
+                            inline_keyboard=[
+                                [InlineKeyboardButton(text="Análise e Desenvolvimento de Sistemas", callback_data='ADS')],
+    
