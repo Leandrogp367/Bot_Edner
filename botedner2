@@ -22,5 +22,5 @@ def condicoes(chatID, msg):
         saldo = salario - msg
         bot.sendMessage(chatID, "seu saldo é de: " saldo, reply_markup=InlineKeyboardMarkup(
                             inline_keyboard=[
-                                [InlineKeyboardButton(text="Análise e Desenvolvimento de Sistemas", callback_data='ADS')],
+                                [InlineKeyboardButton(text="Lucro/Déficit em porcentagem", callback_data='PDL')],
     
